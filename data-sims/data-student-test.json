@@ -2,12 +2,12 @@
   {
     "Id": "0",
     "StudentCode": "S003",
-    "FirstName": "Alan",
-    "LastName": "Makeyt",
-    "Email": "john@gmail.com",
-    "DateOfBirth": "2002-02-02",
-    "Gender": "Male",
-    "PhoneNumber": "0932473248",
-    "Address": "Hanoi"
+    "FirstName": "Alice",
+    "LastName": "Johnson",
+    "Email": "alice.johnson@example.com",
+    "DateOfBirth": "2003-03-03",
+    "Gender": "Female",
+    "PhoneNumber": "0987654321",
+    "Address": "123 Main St"
   }
 ]

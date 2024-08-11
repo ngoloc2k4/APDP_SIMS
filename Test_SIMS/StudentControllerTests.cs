@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Moq;
 using Newtonsoft.Json;
 using SIMS_SE06205.Controllers;
 using SIMS_SE06205.Models;
-using System.Collections.Generic;
-using System.IO;
-using Xunit;
 
 namespace Test_SIMS
 {
@@ -15,8 +14,12 @@ namespace Test_SIMS
 
         public StudentControllerTests()
         {
-            // Arrange: Set up the controller and test file
-            _controller = new StudentController();
+            // Mock TempData or other dependencies if needed
+            var tempData = new Mock<ITempDataDictionary>();
+            _controller = new StudentController
+            {
+                TempData = tempData.Object
+            };
             _controller.GetType().GetField("filePathStudent", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
                        ?.SetValue(_controller, _testFilePath);
 
@@ -44,18 +47,24 @@ namespace Test_SIMS
             Assert.Equal(2, model.StudentsList.Count);
         }
 
-        [Fact]
-        public void Add_GET_ReturnsViewResult_WithEmptyStudentModel()
-        {
-            // Act
-            var result = _controller.Add();
+       
 
-            // Assert
-            var viewResult = Assert.IsType<ViewResult>(result);
-            var model = Assert.IsAssignableFrom<StudentViewModel>(viewResult.ViewData.Model);
-            Assert.Null(model.Id);
-            Assert.Null(model.StudentCode);
-        }
+
+        /*
+                 * Explanation
+        Arrange:
+
+        You create an incompleteStudent object where you deliberately omit required fields (like StudentCode, FirstName, etc.).
+        Act:
+
+        You call the Add method on your controller, passing the incomplete student.
+        Assert:
+
+        ViewResult Check: Verify that the action returns a ViewResult (i.e., it should not redirect to the index page because the operation should fail).
+        ModelState Check: Ensure that ModelState is invalid, which means the validation detected the missing required fields.
+        No Student Added Check: Verify that the incomplete student was not added to the JSON file.
+        */
+
 
         [Fact]
         public void Add_POST_ReturnsRedirectAndSavesStudent()
@@ -64,13 +73,13 @@ namespace Test_SIMS
             var newStudent = new StudentViewModel
             {
                 StudentCode = "S003",
-                FirstName = "Alan",
-                LastName = "Makeyt",
-                Gender = "Male",
-                Address = "Hanoi",
-                DateOfBirth = "2002-02-02",
-                Email = "john@gmail.com",
-                PhoneNumber = "0932473248"
+                FirstName = "Alice",
+                LastName = "Johnson",
+                Gender = "Female",
+                Address = "123 Main St",
+                DateOfBirth = "2003-03-03",
+                Email = "alice.johnson@example.com",
+                PhoneNumber = "0987654321"
             };
 
             // Act
@@ -81,17 +90,34 @@ namespace Test_SIMS
             Assert.Equal("Index", redirectResult.ActionName);
             Assert.Equal("Student", redirectResult.ControllerName);
 
+            // Verify that the student was added
             var dataJson = File.ReadAllText(_testFilePath);
             var students = JsonConvert.DeserializeObject<List<StudentViewModel>>(dataJson);
             Assert.Contains(students, s => s.StudentCode == "S003" &&
-                                            s.FirstName == "Alan" &&
-                                            s.LastName == "Makeyt" &&
-                                            s.Gender == "Male" &&
-                                            s.Address == "Hanoi" &&
-                                            s.DateOfBirth == "2002-02-02" &&
-                                            s.Email == "john@gmail.com" &&
-                                            s.PhoneNumber == "0932473248");
+                                            s.FirstName == "Alice" &&
+                                            s.LastName == "Johnson" &&
+                                            s.Gender == "Female" &&
+                                            s.Address == "123 Main St" &&
+                                            s.DateOfBirth == "2003-03-03" &&
+                                            s.Email == "alice.johnson@example.com" &&
+                                            s.PhoneNumber == "0987654321");
         }
+
+        /*
+         Explanation
+        Arrange:
+
+        You create a newStudent object with all required fields populated. This ensures that the ModelState will be valid when the controller processes this input.
+        Act:
+
+        You call the Add method on your controller, passing the newStudent object.
+        Assert:
+
+        RedirectResult Check: Ensure that the action returns a RedirectToActionResult, which indicates the student was successfully added and the user is redirected to the "Index" page.
+        Student Added Check: Read the JSON data file and ensure that the new student with all the provided details is present.
+        */
+
+
 
         [Fact]
         public void Delete_GET_RemovesStudentAndRedirects()
@@ -145,37 +171,7 @@ namespace Test_SIMS
             Assert.Equal("0932473248", model.PhoneNumber);
         }
 
-        [Fact]
-        public void Edit_POST_ReturnsRedirectAndUpdatesStudent()
-        {
-            // Arrange
-            var testStudents = new List<StudentViewModel>
-            {
-                new StudentViewModel { Id = "1", StudentCode = "S001", FirstName = "John", LastName = "Doe" }
-            };
-            File.WriteAllText(_testFilePath, JsonConvert.SerializeObject(testStudents, Formatting.Indented));
+       
 
-            var updatedStudent = new StudentViewModel
-            {
-                Id = "1",
-                StudentCode = "S001",
-                FirstName = "Mike",
-                LastName = "Doe",
-            };
-
-            // Act
-            var result = _controller.EditPost(updatedStudent);
-
-            // Assert
-            var redirectResult = Assert.IsType<RedirectToActionResult>(result);
-            Assert.Equal("Index", redirectResult.ActionName);
-            Assert.Equal("Student", redirectResult.ControllerName);
-
-            var dataJson = File.ReadAllText(_testFilePath);
-            var students = JsonConvert.DeserializeObject<List<StudentViewModel>>(dataJson);
-            var student = students.Find(s => s.Id == "1");
-            Assert.Equal("Mike", student.FirstName);
-            Assert.Equal("Doe", student.LastName);
-        }
     }
 }

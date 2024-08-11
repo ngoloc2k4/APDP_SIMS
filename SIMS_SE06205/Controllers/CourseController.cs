@@ -6,7 +6,7 @@ namespace SIMS_SE06205.Controllers
 {
     public class CourseController : Controller
     {
-        private string filePathCourse = @"F:\SIMS_practice\APDP-BTec-main\data-sims\\data-courses.json";
+        private string filePathCourse = @"F:\SIMS_practice\APDP-BTec-main\data-sims\data-courses-test.json";
 
         [HttpGet]
         public IActionResult Index()
@@ -63,6 +63,7 @@ namespace SIMS_SE06205.Controllers
                     var dtJson = JsonConvert.SerializeObject(courses, Formatting.Indented);
                     System.IO.File.WriteAllText(filePathCourse, dtJson);
                     TempData["saveStatus"] = true;
+                    
                 }
                 catch
                 {

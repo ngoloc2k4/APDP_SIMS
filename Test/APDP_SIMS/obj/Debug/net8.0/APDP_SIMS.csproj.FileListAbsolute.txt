@@ -1,5 +1,0 @@
-F:\SIMS_practice\APDP-BTec-main\Test\APDP_SIMS\obj\Debug\net8.0\APDP_SIMS.csproj.AssemblyReference.cache
-F:\SIMS_practice\APDP-BTec-main\Test\APDP_SIMS\obj\Debug\net8.0\APDP_SIMS.GeneratedMSBuildEditorConfig.editorconfig
-F:\SIMS_practice\APDP-BTec-main\Test\APDP_SIMS\obj\Debug\net8.0\APDP_SIMS.AssemblyInfoInputs.cache
-F:\SIMS_practice\APDP-BTec-main\Test\APDP_SIMS\obj\Debug\net8.0\APDP_SIMS.AssemblyInfo.cs
-F:\SIMS_practice\APDP-BTec-main\Test\APDP_SIMS\obj\Debug\net8.0\APDP_SIMS.csproj.CoreCompileInputs.cache

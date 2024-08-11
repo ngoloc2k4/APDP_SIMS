@@ -6,7 +6,7 @@ namespace SIMS_SE06205.Controllers
 {
     public class StudentController : Controller
     {
-        private string filePathStudent = @"F:\SIMS_practice\APDP-BTec-main\data-sims\data-student.json";
+        private string filePathStudent = @"F:\SIMS_practice\APDP-BTec-main\data-sims\data-student-test.json";
 
         [HttpGet]
         public IActionResult Index()
@@ -161,7 +161,7 @@ namespace SIMS_SE06205.Controllers
                 {
                     string dataJson = System.IO.File.ReadAllText(filePathStudent);
                     var students = JsonConvert.DeserializeObject<List<StudentViewModel>>(dataJson);
-                    var student = students.Find(s => s.Id == studentViewModel.Id.ToString());
+                    var student = students.Find(match: s => s.Id == studentViewModel.Id.ToString());
 
                     if (student != null)
                     {

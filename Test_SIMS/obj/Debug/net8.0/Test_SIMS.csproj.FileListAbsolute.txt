@@ -110,3 +110,5 @@ F:\SIMS_practice\APDP-BTec-main\Test_SIMS\obj\Debug\net8.0\Test_SIMS.pdb
 F:\SIMS_practice\APDP-BTec-main\Test_SIMS\obj\Debug\net8.0\Test_SIMS.genruntimeconfig.cache
 F:\SIMS_practice\APDP-BTec-main\Test_SIMS\obj\Debug\net8.0\ref\Test_SIMS.dll
 F:\SIMS_practice\APDP-BTec-main\Test_SIMS\obj\Debug\net8.0\Test_SIMS.sourcelink.json
+F:\SIMS_practice\APDP-BTec-main\Test_SIMS\bin\Debug\net8.0\Castle.Core.dll
+F:\SIMS_practice\APDP-BTec-main\Test_SIMS\bin\Debug\net8.0\Moq.dll

@@ -55,17 +55,6 @@
     "Address": "Hanoi"
   },
   {
-    "Id": "8",
-    "StudentCode": "BH00008",
-    "FirstName": "Liam",
-    "LastName": "Wilson",
-    "Email": "Liam.Wilson@example.com",
-    "DateOfBirth": "2003-12-25",
-    "Gender": "male",
-    "PhoneNumber": "098765432129",
-    "Address": "Hanoi"
-  },
-  {
     "Id": "9",
     "StudentCode": "BH00123",
     "FirstName": "Alannnnnnnnnn",

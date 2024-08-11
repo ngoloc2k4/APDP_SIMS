@@ -16,11 +16,5 @@ namespace SIMS_SE06205.Models
 
         public string? Description { get; set; }
 
-        //public CourseViewModel(string id, string name, string des)
-        //{
-        //    Id = id;
-        //    NameCourse = name;
-        //    Description = des;
-        //}
     }
 }

@@ -102,3 +102,5 @@ F:\SIMS_practice\APDP-BTec-main\SIMS_SE06205\obj\Debug\net8.0\SIMS_SE06205.pdb
 F:\SIMS_practice\APDP-BTec-main\SIMS_SE06205\obj\Debug\net8.0\SIMS_SE06205.genruntimeconfig.cache
 F:\SIMS_practice\APDP-BTec-main\SIMS_SE06205\obj\Debug\net8.0\ref\SIMS_SE06205.dll
 F:\SIMS_practice\APDP-BTec-main\SIMS_SE06205\obj\Debug\net8.0\SIMS_SE06205.sourcelink.json
+F:\SIMS_practice\APDP-BTec-main\SIMS_SE06205\bin\Debug\net8.0\Castle.Core.dll
+F:\SIMS_practice\APDP-BTec-main\SIMS_SE06205\bin\Debug\net8.0\Moq.dll
