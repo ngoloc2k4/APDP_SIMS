@@ -1,0 +1,78 @@
+﻿@model SIMS_SE06205.Models.StudentViewModel
+
+@{
+    ViewData["title"] = "Add Student";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col col-sm-12 col-md-12 p-5">
+        <div class="card">
+            <div class="card-header">
+                <h3> Add Student</h3>
+            </div>
+            <div class="card-body">
+                <form method="post" href="@Url.Action("Add", "Student")" asp-action="Add" enctype="multipart/form-data">
+                    <div class="form-control">
+                        <div class="form-group mb-3">
+                            <label asp-for="StudentCode" class="control-label"></label>
+                            <input asp-for="StudentCode" class="form-control" />
+                            <span asp-validation-for="StudentCode" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="FirstName" class="control-label"></label>
+                            <input asp-for="FirstName" class="form-control" />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                         <div class="form-group mb-3">
+                            <label asp-for="LastName" class="control-label"></label>
+                            <input asp-for="LastName" class="form-control" />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                         <div class="form-group mb-3">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                         <div class="form-group mb-3">
+                            <label asp-for="DateOfBirth" class="control-label"></label>
+                            <input asp-for="DateOfBirth" class="form-control" />
+                            
+                        </div>
+                         <div class="form-group mb-3">
+                            <label asp-for="Gender" class="control-label"></label>
+                            <select class="form-control">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                         <div class="form-group mb-3">
+                            <label asp-for="PhoneNumber" class="control-label"></label>
+                            <input asp-for="PhoneNumber" class="form-control" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+                         <div class="form-group mb-3">
+                            <label asp-for="Address" class="control-label"></label>
+                            <input asp-for="Address" class="form-control" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <button class="btn btn-primary btn-sm" type="submit">Save</button>
+                                <a class="btn btn-info btn-sm" href="@Url.Action("Index","Student")">Back to List</a>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

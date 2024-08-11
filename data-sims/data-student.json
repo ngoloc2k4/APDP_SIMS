@@ -1,0 +1,101 @@
+[
+  {
+    "Id": "1",
+    "StudentCode": "BH00001",
+    "FirstName": "Dorothy",
+    "LastName": "Hill",
+    "Email": "Dorothy.Hill@example.com",
+    "DateOfBirth": "2004-01-05",
+    "Gender": "female",
+    "PhoneNumber": "098765432123",
+    "Address": "Hanoi"
+  },
+  {
+    "Id": "2",
+    "StudentCode": "BH00002",
+    "FirstName": "Alan",
+    "LastName": "Wark",
+    "Email": "Alanwark@example.com",
+    "DateOfBirth": "2003-01-05",
+    "Gender": "male",
+    "PhoneNumber": "09876342123",
+    "Address": "Hanoi"
+  },
+  {
+    "Id": "3",
+    "StudentCode": "BH00003",
+    "FirstName": "Emma",
+    "LastName": "Smith",
+    "Email": "Emma.Smith@example.com",
+    "DateOfBirth": "2005-03-12",
+    "Gender": "female",
+    "PhoneNumber": "098765432124",
+    "Address": "Hanoi"
+  },
+  {
+    "Id": "4",
+    "StudentCode": "BH00004",
+    "FirstName": "James",
+    "LastName": "Johnson",
+    "Email": "James.Johnson@example.com",
+    "DateOfBirth": "2004-07-18",
+    "Gender": "male",
+    "PhoneNumber": "098765432125",
+    "Address": "Hanoi"
+  },
+  {
+    "Id": "5",
+    "StudentCode": "BH00005",
+    "FirstName": "Olivia",
+    "LastName": "Brown",
+    "Email": "Olivia.Brown@example.com",
+    "DateOfBirth": "2003-11-02",
+    "Gender": "female",
+    "PhoneNumber": "098765432126",
+    "Address": "Hanoi"
+  },
+  {
+    "Id": "6",
+    "StudentCode": "BH00006",
+    "FirstName": "William",
+    "LastName": "Davis",
+    "Email": "William.Davis@example.com",
+    "DateOfBirth": "2004-05-29",
+    "Gender": "male",
+    "PhoneNumber": "098765432127",
+    "Address": "Hanoi"
+  },
+  {
+    "Id": "7",
+    "StudentCode": "BH00007",
+    "FirstName": "Sophia",
+    "LastName": "Miller",
+    "Email": "Sophia.Miller@example.com",
+    "DateOfBirth": "2005-09-14",
+    "Gender": "female",
+    "PhoneNumber": "098765432128",
+    "Address": "Hanoi"
+  },
+  {
+    "Id": "8",
+    "StudentCode": "BH00008",
+    "FirstName": "Liam",
+    "LastName": "Wilson",
+    "Email": "Liam.Wilson@example.com",
+    "DateOfBirth": "2003-12-25",
+    "Gender": "male",
+    "PhoneNumber": "098765432129",
+    "Address": "Hanoi"
+  },
+  {
+    "Id": "9",
+    "StudentCode": "BH00123",
+    "FirstName": "Alan",
+    "LastName": "Wacker",
+    "Email": "Alan@gmail.com",
+    "DateOfBirth": "2004-01-01",
+    "Gender": "Male",
+    "PhoneNumber": "0986573382",
+    "Address": "Ha Nam"
+  }
+]
