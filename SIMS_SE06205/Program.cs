@@ -37,7 +37,9 @@ namespace SIMS_SE06205
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
+
 
             app.UseSession();
 

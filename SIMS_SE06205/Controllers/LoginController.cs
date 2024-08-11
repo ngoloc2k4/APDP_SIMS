@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SIMS_SE06205.Models;
-using System;
 
 namespace SIMS_SE06205.Controllers
 {
@@ -26,7 +25,7 @@ namespace SIMS_SE06205.Controllers
 
                 // kiem tra username va password co ton tai trong dataJson hay khong ?
                 var people = Newtonsoft.Json.JsonConvert.DeserializeObject<List<LoginViewModel>>(dataJson);
-                var user =  (from p in people
+                var user = (from p in people
                             where p.UserName == username && p.Password == password
                             select p).FirstOrDefault();
                 if (user == null)

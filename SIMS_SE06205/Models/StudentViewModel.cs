@@ -4,7 +4,7 @@ namespace SIMS_SE06205.Models
 {
     public class StudentModel
     {
-        public  List<StudentViewModel> ? StudentsList { get; set; }
+        public List<StudentViewModel>? StudentsList { get; set; }
     }
     public class StudentViewModel
     {

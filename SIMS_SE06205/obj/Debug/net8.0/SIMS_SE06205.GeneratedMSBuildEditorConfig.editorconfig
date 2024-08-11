@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\SIMS_practice\APDP-BTec-main\SIMS_SE06205
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/SIMS_practice/APDP-BTec-main/SIMS_SE06205/Views/Authentication/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/SIMS_practice/APDP-BTec-main/SIMS_SE06205/Views/Course/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,12 +70,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/SIMS_practice/APDP-BTec-main/SIMS_SE06205/Views/StudentInterface.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudEludGVyZmFjZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/SIMS_practice/APDP-BTec-main/SIMS_SE06205/Views/Student/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/SIMS_practice/APDP-BTec-main/SIMS_SE06205/Views/Student/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/SIMS_practice/APDP-BTec-main/SIMS_SE06205/Views/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SIMS_practice/APDP-BTec-main/SIMS_SE06205/Views/TeacherInterface.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlckludGVyZmFjZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/SIMS_practice/APDP-BTec-main/SIMS_SE06205/Views/_ViewImports.cshtml]

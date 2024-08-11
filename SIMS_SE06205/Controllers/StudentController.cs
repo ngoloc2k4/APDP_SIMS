@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SIMS_SE06205.Models;
 using Newtonsoft.Json;
+using SIMS_SE06205.Models;
 
 namespace SIMS_SE06205.Controllers
 {
@@ -39,21 +39,31 @@ namespace SIMS_SE06205.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-            StudentViewModel model = new StudentViewModel();
-            return View(model);
+            StudentViewModel student = new StudentViewModel();
+            return View(student);
         }
 
         [HttpPost]
-        public IActionResult Add(StudentViewModel modelView)
+        public IActionResult Add(StudentViewModel StudentModelView)
         {
-            if (ModelState.IsValid)
+            try
             {
-                try
+                if (ModelState.IsValid)
                 {
                     string dataJson = System.IO.File.ReadAllText(filePathStudent);
                     var students = JsonConvert.DeserializeObject<List<StudentViewModel>>(dataJson);
+
+                    // Check if StudentCode already exists
+                    var existingStudent = students.FirstOrDefault(s => s.StudentCode == StudentModelView.StudentCode);
+                    if (existingStudent != null)
+                    {
+                        ModelState.AddModelError("StudentCode", "StudentCode already exists.");
+                        TempData["saveStatus"] = false;
+                        return View(StudentModelView); // Return view with error
+                    }
+
                     int maxId = 0;
-                    if (students != null)
+                    if (students != null && students.Count > 0)
                     {
                         maxId = int.Parse((from s in students select s.Id).Max()) + 1;
                     }
@@ -61,26 +71,130 @@ namespace SIMS_SE06205.Controllers
                     students.Add(new StudentViewModel
                     {
                         Id = idIncrement,
-                        StudentCode = modelView.StudentCode,
-                        FirstName = modelView.FirstName,
-                        LastName = modelView.LastName,
-                        Email = modelView.Email,
-                        DateOfBirth = modelView.DateOfBirth,
-                        Gender = modelView.Gender,
-                        PhoneNumber = modelView.PhoneNumber,
-                        Address = modelView.Address,
+                        StudentCode = StudentModelView.StudentCode,
+                        FirstName = StudentModelView.FirstName,
+                        LastName = StudentModelView.LastName,
+                        Gender = StudentModelView.Gender,
+                        Email = StudentModelView.Email,
+                        DateOfBirth = StudentModelView.DateOfBirth,
+                        PhoneNumber = StudentModelView.PhoneNumber,
+                        Address = StudentModelView.Address,
                     });
+
                     var dtJson = JsonConvert.SerializeObject(students, Formatting.Indented);
                     System.IO.File.WriteAllText(filePathStudent, dtJson);
                     TempData["saveStatus"] = true;
+
+                    return RedirectToAction(nameof(StudentController.Index), "Student");
                 }
-                catch
-                {
-                    TempData["saveStatus"] = false;
-                }
-                return RedirectToAction(nameof(StudentController.Index), "Student");
             }
-            return View(modelView);
+            catch
+            {
+                TempData["saveStatus"] = false;
+            }
+            return View(StudentModelView);
+        }
+
+
+        [HttpGet]
+        public IActionResult Delete(int id = 0)
+        {
+            try
+            {
+                string dataJson = System.IO.File.ReadAllText(filePathStudent);
+                var students = JsonConvert.DeserializeObject<List<StudentViewModel>>(dataJson);
+                var student = students.Find(s => s.Id == id.ToString());
+                if (student != null)
+                {
+                    students.Remove(student);
+                    string updatedJson = JsonConvert.SerializeObject(students, Formatting.Indented);
+                    System.IO.File.WriteAllText(filePathStudent, updatedJson);
+                    TempData["deleteStatus"] = true;
+                }
+                else
+                {
+                    TempData["deleteStatus"] = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["deleteStatus"] = false;
+            }
+            return RedirectToAction(nameof(StudentController.Index), "Student");
+        }
+
+
+        [HttpGet]
+        public IActionResult Edit(int id = 0)
+        {
+            string dataJson = System.IO.File.ReadAllText(filePathStudent);
+            var students = JsonConvert.DeserializeObject<List<StudentViewModel>>(dataJson);
+            var student = students.Find(s => s.Id == id.ToString());
+
+            if (student == null)
+            {
+                return NotFound(); // Handle case where student is not found
+            }
+
+            StudentViewModel studentViewModel = new StudentViewModel
+            {
+                Id = student.Id,
+                StudentCode = student.StudentCode,
+                FirstName = student.FirstName,
+                LastName = student.LastName,
+                Gender = student.Gender,
+                Email = student.Email,
+                DateOfBirth = student.DateOfBirth,
+                PhoneNumber = student.PhoneNumber,
+                Address = student.Address
+            };
+
+            return View(studentViewModel);
+        }
+
+        [HttpPost, ActionName("Edit")]
+        public IActionResult EditPost(StudentViewModel studentViewModel)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    string dataJson = System.IO.File.ReadAllText(filePathStudent);
+                    var students = JsonConvert.DeserializeObject<List<StudentViewModel>>(dataJson);
+                    var student = students.Find(s => s.Id == studentViewModel.Id.ToString());
+
+                    if (student != null)
+                    {
+                        // Update student properties
+                        student.StudentCode = studentViewModel.StudentCode;
+                        student.FirstName = studentViewModel.FirstName;
+                        student.LastName = studentViewModel.LastName;
+                        student.Gender = studentViewModel.Gender;
+                        student.Email = studentViewModel.Email;
+                        student.DateOfBirth = studentViewModel.DateOfBirth;
+                        student.PhoneNumber = studentViewModel.PhoneNumber;
+                        student.Address = studentViewModel.Address;
+
+                        // Save updated data
+                        string updatedJson = JsonConvert.SerializeObject(students, Formatting.Indented);
+                        System.IO.File.WriteAllText(filePathStudent, updatedJson);
+
+                        TempData["editStatus"] = true;
+                        return RedirectToAction(nameof(StudentController.Index));
+                    }
+                    else
+                    {
+                        TempData["editStatus"] = false;
+                    }
+                }
+            }
+            catch
+            {
+                TempData["editStatus"] = false;
+            }
+
+            // If something goes wrong, return the same view with the model
+            return View(studentViewModel);
         }
 
     }

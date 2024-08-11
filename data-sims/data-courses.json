@@ -1,10 +1,5 @@
 [
   {
-    "Id": "1",
-    "NameCourse": "Java Android - Android Studio",
-    "Description": "Java Android for begginer"
-  },
-  {
     "Id": "2",
     "NameCourse": "ASP.Net Core MVC",
     "Description": "ASP.Net Core MVC for begginer"
@@ -18,5 +13,15 @@
     "Id": "4",
     "NameCourse": "C Sharp  OOP",
     "Description": "C# OOP for begginer"
+  },
+  {
+    "Id": "5",
+    "NameCourse": "New Course",
+    "Description": "New Course Description"
+  },
+  {
+    "Id": "6",
+    "NameCourse": "New Course",
+    "Description": "New Course Description"
   }
 ]

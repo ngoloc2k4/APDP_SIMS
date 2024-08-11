@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SIMS_SE06205.Models;
 using Newtonsoft.Json;
+using SIMS_SE06205.Models;
 
 namespace SIMS_SE06205.Controllers
 {
@@ -50,7 +50,7 @@ namespace SIMS_SE06205.Controllers
                     if (courses != null)
                     {
                         maxId = int.Parse((from c in courses
-                        select c.Id).Max()) + 1;
+                                           select c.Id).Max()) + 1;
                     }
                     string idIncrement = maxId.ToString();
 
