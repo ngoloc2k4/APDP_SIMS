@@ -6,7 +6,7 @@ namespace SIMS_SE06205.Controllers
 {
     public class CourseController : Controller
     {
-        private string filePathCourse = @"F:\SIMS_practice\APDP-BTec-main\data-sims\data-courses-test.json";
+        private string filePathCourse = @"F:\SIMS_practice\APDP-BTec-main\data-sims\data-courses.json";
 
         [HttpGet]
         public IActionResult Index()
@@ -46,33 +46,40 @@ namespace SIMS_SE06205.Controllers
                 {
                     string dataJson = System.IO.File.ReadAllText(filePathCourse);
                     var courses = JsonConvert.DeserializeObject<List<CourseViewModel>>(dataJson);
+
                     int maxId = 0;
-                    if (courses != null)
+                    if (courses != null && courses.Any())
                     {
-                        maxId = int.Parse((from c in courses
-                                           select c.Id).Max()) + 1;
+                        // Ensure Ids are treated as integers
+                        maxId = courses.Max(c => int.Parse(c.Id));
                     }
-                    string idIncrement = maxId.ToString();
+                    int newId = maxId + 1;
 
                     courses.Add(new CourseViewModel
                     {
-                        Id = idIncrement,
+                        Id = newId.ToString(),  // Storing as a string if necessary
                         NameCourse = courseViewModel.NameCourse,
                         Description = courseViewModel.Description
                     });
-                    var dtJson = JsonConvert.SerializeObject(courses, Formatting.Indented);
-                    System.IO.File.WriteAllText(filePathCourse, dtJson);
+
+                    var updatedJson = JsonConvert.SerializeObject(courses, Formatting.Indented);
+                    System.IO.File.WriteAllText(filePathCourse, updatedJson);
+
                     TempData["saveStatus"] = true;
-                    
                 }
-                catch
+                catch (Exception ex)
                 {
                     TempData["saveStatus"] = false;
+                    // Log the exception details
+                    System.Diagnostics.Debug.WriteLine($"Error while adding course: {ex.Message}");
                 }
+
                 return RedirectToAction(nameof(CourseController.Index), "Course");
             }
+
             return View(courseViewModel);
         }
+
 
         [HttpGet]
         public IActionResult Delete(int id = 0)

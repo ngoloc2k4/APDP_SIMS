@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "F:\\SIMS_practice\\APDP-BTec-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E9474CF-9C83-4A44-B104-04048A2113B8}|Test_SIMS\\Test_SIMS.csproj|f:\\sims_practice\\apdp-btec-main\\test_sims\\studentcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E9474CF-9C83-4A44-B104-04048A2113B8}|Test_SIMS\\Test_SIMS.csproj|solutionrelative:test_sims\\studentcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E9474CF-9C83-4A44-B104-04048A2113B8}|Test_SIMS\\Test_SIMS.csproj|f:\\sims_practice\\apdp-btec-main\\test_sims\\coursecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,8 +27,40 @@
       "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\models\\courseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\models\\courseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\models\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\models\\usermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\views\\teacherinterface\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\views\\teacherinterface\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\views\\studentinterface\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\views\\studentinterface\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\views\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\views\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\controllers\\teacherinterfacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\controllers\\teacherinterfacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|f:\\sims_practice\\apdp-btec-main\\sims_se06205\\controllers\\studentinterfacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB6166CA-4CC9-48E0-9640-409711F67976}|SIMS_SE06205\\SIMS_SE06205.csproj|solutionrelative:sims_se06205\\controllers\\studentinterfacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E9474CF-9C83-4A44-B104-04048A2113B8}|Test_SIMS\\Test_SIMS.csproj|f:\\sims_practice\\apdp-btec-main\\test_sims\\test_sims.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -34,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,68 +86,188 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "SIMS_SE06205\\Controllers\\CourseController.cs",
-              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "SIMS_SE06205\\Controllers\\CourseController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:28:10.073Z"
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\Register\\Index.cshtml",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Views\\Register\\Index.cshtml",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\Register\\Index.cshtml",
+              "RelativeToolTip": "SIMS_SE06205\\Views\\Register\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:33:50.129Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CourseControllerTests.cs",
-              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\Test_SIMS\\CourseControllerTests.cs",
-              "RelativeDocumentMoniker": "Test_SIMS\\CourseControllerTests.cs",
-              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\Test_SIMS\\CourseControllerTests.cs",
-              "RelativeToolTip": "Test_SIMS\\CourseControllerTests.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAswAABAABRAAAA",
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Controllers\\RegisterController.cs",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "SIMS_SE06205\\Controllers\\RegisterController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAoAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:21:42.932Z"
+              "WhenOpened": "2024-08-16T05:32:02.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "StudentController.cs",
               "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "SIMS_SE06205\\Controllers\\StudentController.cs",
               "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\StudentController.cs",
               "RelativeToolTip": "SIMS_SE06205\\Controllers\\StudentController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwA8AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T08:28:54.503Z"
+              "WhenOpened": "2024-08-16T05:11:40.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserManagementViewModel.cs",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Models\\UserManagementViewModel.cs",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Models\\UserManagementViewModel.cs",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Models\\UserManagementViewModel.cs",
+              "RelativeToolTip": "SIMS_SE06205\\Models\\UserManagementViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T04:57:42.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\StudentInterface\\Index.cshtml",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Views\\StudentInterface\\Index.cshtml",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\StudentInterface\\Index.cshtml",
+              "RelativeToolTip": "SIMS_SE06205\\Views\\StudentInterface\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T04:55:26.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourseControllerTests.cs",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\Test_SIMS\\CourseControllerTests.cs",
+              "RelativeDocumentMoniker": "Test_SIMS\\CourseControllerTests.cs",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\Test_SIMS\\CourseControllerTests.cs",
+              "RelativeToolTip": "Test_SIMS\\CourseControllerTests.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwNkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T04:03:42.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Controllers\\LoginController.cs",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "SIMS_SE06205\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowDEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T20:34:59.369Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CourseViewModel.cs",
-              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Models\\CourseViewModel.cs",
-              "RelativeDocumentMoniker": "SIMS_SE06205\\Models\\CourseViewModel.cs",
-              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Models\\CourseViewModel.cs",
-              "RelativeToolTip": "SIMS_SE06205\\Models\\CourseViewModel.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAswBEAAAAAAAAA",
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Controllers\\CourseController.cs",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "SIMS_SE06205\\Controllers\\CourseController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwAgAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T08:17:41.935Z"
+              "WhenOpened": "2024-08-16T03:52:22.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentControllerTests.cs",
-              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\Test_SIMS\\StudentControllerTests.cs",
-              "RelativeDocumentMoniker": "Test_SIMS\\StudentControllerTests.cs",
-              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\Test_SIMS\\StudentControllerTests.cs*",
-              "RelativeToolTip": "Test_SIMS\\StudentControllerTests.cs*",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAiwGYAAAAxAAAA",
+              "DocumentIndex": 6,
+              "Title": "UserManagementController.cs",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\UserManagementController.cs",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Controllers\\UserManagementController.cs",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\UserManagementController.cs",
+              "RelativeToolTip": "SIMS_SE06205\\Controllers\\UserManagementController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T04:59:57.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T05:03:45.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\TeacherInterface\\Index.cshtml",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Views\\TeacherInterface\\Index.cshtml",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\TeacherInterface\\Index.cshtml",
+              "RelativeToolTip": "SIMS_SE06205\\Views\\TeacherInterface\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:09:34.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_MainLayout.cshtml",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\Shared\\_MainLayout.cshtml",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Views\\Shared\\_MainLayout.cshtml",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\Shared\\_MainLayout.cshtml",
+              "RelativeToolTip": "SIMS_SE06205\\Views\\Shared\\_MainLayout.cshtml",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAAAEIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T03:50:44.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_LoginLayout.cshtml",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\Shared\\_LoginLayout.cshtml",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Views\\Shared\\_LoginLayout.cshtml",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\Shared\\_LoginLayout.cshtml",
+              "RelativeToolTip": "SIMS_SE06205\\Views\\Shared\\_LoginLayout.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAABEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T03:50:21.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SIMS_SE06205\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T03:49:37.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TeacherInterfaceController.cs",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\TeacherInterfaceController.cs",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Controllers\\TeacherInterfaceController.cs",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\TeacherInterfaceController.cs",
+              "RelativeToolTip": "SIMS_SE06205\\Controllers\\TeacherInterfaceController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T03:47:53.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StudentInterfaceController.cs",
+              "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\StudentInterfaceController.cs",
+              "RelativeDocumentMoniker": "SIMS_SE06205\\Controllers\\StudentInterfaceController.cs",
+              "ToolTip": "F:\\SIMS_practice\\APDP-BTec-main\\SIMS_SE06205\\Controllers\\StudentInterfaceController.cs",
+              "RelativeToolTip": "SIMS_SE06205\\Controllers\\StudentInterfaceController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T03:47:00.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Test_SIMS.csproj",
               "DocumentMoniker": "F:\\SIMS_practice\\APDP-BTec-main\\Test_SIMS\\Test_SIMS.csproj",
               "RelativeDocumentMoniker": "Test_SIMS\\Test_SIMS.csproj",

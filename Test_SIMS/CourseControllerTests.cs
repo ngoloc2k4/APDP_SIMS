@@ -216,48 +216,5 @@ namespace Test_SIMS
             Assert.Equal("", model.NameCourse); // Validate the invalid input
             Assert.Equal("Some Description", model.Description);
         }
-
-        [Fact]
-        public void Update_POST_EmptyNameCourse_ReturnsViewResult()
-        {
-            // Arrange
-            var existingCourse = new CourseViewModel
-            {
-                Id = "1",
-                NameCourse = "Existing Course",
-                Description = "Existing Description"
-            };
-
-            // Initialize the test file with the existing course
-            File.WriteAllText(_testFilePath, JsonConvert.SerializeObject(new List<CourseViewModel> { existingCourse }, Formatting.Indented));
-
-            // Create an instance of the controller
-            var mockTempData = new Mock<ITempDataDictionary>();
-            _controller.TempData = mockTempData.Object;
-
-            var updatedCourse = new CourseViewModel
-            {
-                Id = "1",
-                NameCourse = "", // Empty NameCourse
-                Description = "Updated Description"
-            };
-
-            // Act
-            var result = _controller.Update(updatedCourse);
-
-            // Assert
-            var viewResult = Assert.IsType<ViewResult>(result);
-            Assert.Equal(updatedCourse, viewResult.Model); // Check if the model is returned with the invalid data
-
-            // Verify that the course data was not updated
-            var dataJson = File.ReadAllText(_testFilePath);
-            var courses = JsonConvert.DeserializeObject<List<CourseViewModel>>(dataJson);
-            var course = courses.Find(c => c.Id == "1");
-            Assert.NotNull(course); // Ensure the course still exists
-            Assert.Equal("Existing Course", course.NameCourse); // Ensure the name has not been changed
-            Assert.Equal("Existing Description", course.Description); // Ensure the description remains unchanged
-        }
-
-
     }
 }

@@ -5,7 +5,7 @@ namespace SIMS_SE06205.Controllers
 {
     public class LoginController : Controller
     {
-        private string filePathDataUser = @"F:\SIMS_practice\APDP-BTec-main\data-sims\\data-user.json";
+        private string filePathDataUser = @"F:\SIMS_practice\APDP-BTec-main\data-sims\users.json";
 
         [HttpGet]
         public IActionResult Index()
@@ -43,7 +43,19 @@ namespace SIMS_SE06205.Controllers
                         HttpContext.Session.SetString("SessionRole", user.Role);
                         HttpContext.Session.SetString("SessionEmail", user.Email);
                     }
-                    return RedirectToAction(nameof(HomeController.Index), "Home");
+                    switch (user.Role.ToLower())
+                    {
+                        case "admin":
+                            return RedirectToAction(nameof(HomeController.Index), "Home");
+                        case "teacher":
+                            return RedirectToAction("Index", "TeacherInterface");
+                        case "student":
+                            return RedirectToAction("Index", "StudentInterface");
+                        default:
+                            ModelState.AddModelError("", "Invalid role.");
+                            return View(model);
+                    }
+
                 }
             }
             return View(model);

@@ -6,7 +6,6 @@
     string nameController = ViewContext.RouteData.Values["Controller"].ToString();
     string activeCourse = nameController == "Course" ? "active" : "";
     string activeStudent = nameController == "Student" ? "active" : "";
-    string activeAuthentication = nameController == "Authentication" ? "active" : "";
 }
 
 <!DOCTYPE html>
@@ -70,10 +69,7 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Student Management
                         </a>
-                        <a class="nav-link @activeAuthentication" href="@Url.Action("Index", "Authentication")">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                             Authentication
-                        </a>
+                       
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
@@ -89,7 +85,7 @@
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; BTec SE06205 2024</div>
+                        <div class="text-muted">Copyright &copy; SIMS_Project SE06204</div>
                         <div>
                             <a href="#">Privacy Policy</a>
                             &middot;

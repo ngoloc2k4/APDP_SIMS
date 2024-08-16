@@ -1,17 +1,26 @@
 [
   {
+    "id": 1,
+    "Username": "admin",
     "Email": "admin@example.com",
-    "Password": "Admin@123",
-    "Role": "Admin"
+    "Password": "admin",
+    "Role": "admin",
+    "CodeID": "admin1"
   },
   {
+    "id": 2,
+    "Username": "teacher",
     "Email": "teacher@example.com",
-    "Password": "Teacher@123",
-    "Role": "Teacher"
+    "Password": "teacher",
+    "Role": "teacher",
+    "CodeID": "TC001"
   },
   {
+    "id": 3,
+    "Username": "student",
     "Email": "student@example.com",
-    "Password": "Student@123",
-    "Role": "Student"
+    "Password": "student",
+    "Role": "student",
+    "CodeID": "BH00001"
   }
 ]

@@ -6,7 +6,7 @@ namespace SIMS_SE06205.Controllers
 {
     public class StudentController : Controller
     {
-        private string filePathStudent = @"F:\SIMS_practice\APDP-BTec-main\data-sims\data-student-test.json";
+        private string filePathStudent = @"F:\SIMS_practice\APDP-BTec-main\data-sims\data-student.json";
 
         [HttpGet]
         public IActionResult Index()
