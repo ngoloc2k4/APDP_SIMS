@@ -19,8 +19,11 @@ namespace SIMS_SE06205.Controllers
         {
             if (ModelState.IsValid)
             {
+                // lay thong tin tu form
                 string username = model.UserName.Trim();
                 string password = model.Password.Trim();
+
+                // lấy data từ json file
                 string dataJson = System.IO.File.ReadAllText(filePathDataUser);
 
                 // kiem tra username va password co ton tai trong dataJson hay khong ?
@@ -41,16 +44,20 @@ namespace SIMS_SE06205.Controllers
                         HttpContext.Session.SetString("SessionUserId", user.Id);
                         HttpContext.Session.SetString("SessionUsername", user.UserName);
                         HttpContext.Session.SetString("SessionRole", user.Role);
-                        HttpContext.Session.SetString("SessionEmail", user.Email);
                     }
+                    // chuyen huong den trang tuong ung voi role
                     switch (user.Role.ToLower())
                     {
+                        // chuyen huong den trang admin
                         case "admin":
                             return RedirectToAction(nameof(HomeController.Index), "Home");
+                        // chuyen huong den trang teacher
                         case "teacher":
                             return RedirectToAction("Index", "TeacherInterface");
+                        // chuyen huong den trang student
                         case "student":
                             return RedirectToAction("Index", "StudentInterface");
+                        // mac dinh loi, quay ve trang login
                         default:
                             ModelState.AddModelError("", "Invalid role.");
                             return View(model);
@@ -72,7 +79,6 @@ namespace SIMS_SE06205.Controllers
                 HttpContext.Session.Remove("SessionUserId");
                 HttpContext.Session.Remove("SessionUsername");
                 HttpContext.Session.Remove("SessionRole");
-                HttpContext.Session.Remove("SessionEmail");
             }
             // quay ve trang dang nhap
             return RedirectToAction(nameof(LoginController.Index), "Login");

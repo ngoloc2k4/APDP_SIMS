@@ -45,35 +45,35 @@
   },
   {
     "Id": "5",
-    "StudentCode": "BH00005",
-    "FirstName": "Olivia",
-    "LastName": "Brown",
-    "Email": "Olivia.Brown@example.com",
-    "DateOfBirth": "2003-11-02",
-    "Gender": "female",
-    "PhoneNumber": "098765432126",
-    "Address": "Hanoi"
+    "StudentCode": "bh2222222222",
+    "FirstName": "Loc",
+    "LastName": "Ngo",
+    "Email": "kim.loc.ngo.0011@gmail.com",
+    "DateOfBirth": "2000-01-01",
+    "Gender": "Male",
+    "PhoneNumber": "0858181005",
+    "Address": "Quyet Thang"
   },
   {
-    "Id": "9",
-    "StudentCode": "BH00123",
-    "FirstName": "Alannnnnnnnnn",
-    "LastName": "Wackerrrr",
-    "Email": "Alan@gmail.com",
-    "DateOfBirth": "2004-01-01",
+    "Id": "6",
+    "StudentCode": "bh11",
+    "FirstName": "Loc",
+    "LastName": "Ngo",
+    "Email": "hello@gmail",
+    "DateOfBirth": "2000-01-01",
     "Gender": "Male",
-    "PhoneNumber": "0986573382",
+    "PhoneNumber": "038338393947",
+    "Address": "Quyet Thang"
+  },
+  {
+    "Id": "7",
+    "StudentCode": "bh122",
+    "FirstName": "loc",
+    "LastName": "ngo",
+    "Email": "loc@gmail.com",
+    "DateOfBirth": "2000-01-01",
+    "Gender": "Male",
+    "PhoneNumber": "093836352414",
     "Address": "Ha Nam"
-  },
-  {
-    "Id": "10",
-    "StudentCode": "BH23456",
-    "FirstName": "Blaaa",
-    "LastName": "Blaaa",
-    "Email": "Blabla@blabla.com",
-    "DateOfBirth": "2024-08-20",
-    "Gender": "Male",
-    "PhoneNumber": "09859847843",
-    "Address": "Quang Ninh"
   }
 ]

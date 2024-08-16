@@ -17,34 +17,34 @@
                         <div class="col-sm-12 col-md-6">
                             <div class="mb-3">
                                 <label asp-for="StudentCode" class="control-label"></label>
-                                <input type="text" class="form-control" asp-for="StudentCode" />
+                                <input type="text" class="form-control" asp-for="StudentCode" required />
                                 <span asp-validation-for="StudentCode"></span>
                             </div>
                             <div class="mb-3">
                                 <label asp-for="FirstName" class="control-label"></label>
-                                <input type="text" class="form-control" asp-for="FirstName" />
+                                <input type="text" class="form-control" asp-for="FirstName" required />
                                 <span asp-validation-for="FirstName"></span>
                             </div>
                             <div class="mb-3">
                                 <label asp-for="LastName" class="control-label"></label>
-                                <input type="text" class="form-control" asp-for="LastName" />
+                                <input type="text" class="form-control" asp-for="LastName" required />
                                 <span asp-validation-for="LastName"></span>
                             </div>
                             <div class="mb-3">
                                 <label asp-for="Email" class="control-label"></label>
-                                <input type="email" class="form-control" asp-for="Email" />
+                                <input type="email" class="form-control" asp-for="Email" required />
                                 <span asp-validation-for="Email"></span>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <div class="mb-3">
                                 <label asp-for="PhoneNumber" class="control-label"></label>
-                                <input type="text" class="form-control" asp-for="PhoneNumber" />
+                                <input type="number" class="form-control" asp-for="PhoneNumber" required />
                                 <span asp-validation-for="PhoneNumber"></span>
                             </div>
                             <div class="mb-3">
                                 <label asp-for="Address" class="control-label"></label>
-                                <input type="text" class="form-control" asp-for="Address" />
+                                <input type="text" class="form-control" asp-for="Address" required />
                                 <span asp-validation-for="Address"></span>
                             </div>
                             <div class="mb-3">
@@ -57,7 +57,7 @@
 
                             <div class="mb-3">
                                 <label asp-for="DateOfBirth"></label>
-                                <input type="date" class="form-control" asp-for="DateOfBirth" />
+                                <input type="date" class="form-control" asp-for="DateOfBirth" required />
                             </div>
                         </div>
 

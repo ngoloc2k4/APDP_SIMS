@@ -14,13 +14,13 @@ namespace SIMS_SE06205.Models
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Required(ErrorMessage = "Email cannot be empty")]
-        [EmailAddress(ErrorMessage = "Invalid Email Address")]
-        public string Email { get; set; }
+       /* [Required(ErrorMessage = "Email cannot be empty")]*/
+        /*[EmailAddress(ErrorMessage = "Invalid Email Address")]*/
+       /* public string Email { get; set; }
 
         [Required(ErrorMessage = "Phone number cannot be empty")]
-        [RegularExpression(@"^\d{10}$", ErrorMessage = "Phone number must be exactly 10 digits.")]
-        public string PhoneNumber { get; set; }
+        [RegularExpression(@"^\d{10}$", ErrorMessage = "Phone number must be exactly 10 digits.")]*/
+       /* public string PhoneNumber { get; set; }*/
 
         
     }

@@ -4,9 +4,11 @@
 
 @model SIMS_SE06205.Models.LoginViewModel
 
+
 @{
     Layout = "~/Views/Shared/_LoginLayout.cshtml";
     bool loginStatus = Convert.ToBoolean(TempData["loginStatus"]);
+    var registerStatus = TempData["registerStatus"];
 }
 <div class="container">
     <div class="row justify-content-center">
@@ -20,6 +22,10 @@
                         {
                             <div class="text-danger text-center my-3"> Account invalid</div>
                         }
+                    }
+                    @if (registerStatus != null)
+                    {
+                        <div class="text-danger text-center my-3">@registerStatus</div>
                     }
                 </div>
                 <div class="card-body">
@@ -43,10 +49,14 @@
                             <button class="btn btn-primary" type="submit">Login</button>
                         </div>
                     </form>
-                </div>
-                <div class="card-footer text-center py-3">
-                    @* <div class="small"><a href="register.html">Need an account? Sign up!</a></div> *@
-                </div>
+                @* <div class="card-footer text-center py-3">
+                    <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
+                </div> *@
+                    <div class="card-footer text-center py-3">
+                        <div class="small">
+                            <a href="@Url.Action("Index", "Register")"> Don't have an account? </a>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>

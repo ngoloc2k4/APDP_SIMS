@@ -11,7 +11,7 @@ namespace SIMS_SE06205.Models
         [Key]
         public string? Id { get; set; }
 
-        [Required(ErrorMessage = "Course's Name can be not empty")]
+        [Required(ErrorMessage = "Vui lòng điền thêm thông tin")]
         public string NameCourse { get; set; }
 
         public string? Description { get; set; }

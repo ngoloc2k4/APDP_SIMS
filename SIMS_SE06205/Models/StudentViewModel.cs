@@ -10,7 +10,7 @@ namespace SIMS_SE06205.Models
     {
         [Key]
         public string? Id { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Not empty")]
         public string? StudentCode { get; set; }
 
         [Required(ErrorMessage = "Student's Name can be not empty")]
@@ -23,11 +23,11 @@ namespace SIMS_SE06205.Models
 
         [Required(ErrorMessage = "Your BirthDay can be not empty")]
         public string? DateOfBirth { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Not empty")]
         public string? Gender { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Not empty")]
         public string? PhoneNumber { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Not empty")]
         public string? Address { get; set; }
     }
 }

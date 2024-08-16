@@ -50,8 +50,9 @@ namespace SIMS_SE06205.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    // Read the JSON data from the file
                     string dataJson = System.IO.File.ReadAllText(filePathStudent);
-                    var students = JsonConvert.DeserializeObject<List<StudentViewModel>>(dataJson);
+                    var students = JsonConvert.DeserializeObject<List<StudentViewModel>>(dataJson) ?? new List<StudentViewModel>();
 
                     // Check if StudentCode already exists
                     var existingStudent = students.FirstOrDefault(s => s.StudentCode == StudentModelView.StudentCode);
@@ -62,12 +63,15 @@ namespace SIMS_SE06205.Controllers
                         return View(StudentModelView); // Return view with error
                     }
 
+                    // Calculate the new ID
                     int maxId = 0;
-                    if (students != null && students.Count > 0)
+                    if (students != null && students.Any())
                     {
-                        maxId = int.Parse((from s in students select s.Id).Max()) + 1;
+                        maxId = students.Max(s => int.Parse(s.Id));
                     }
-                    string idIncrement = maxId.ToString();
+                    int newId = maxId + 1;
+
+                    string idIncrement = newId.ToString();
                     students.Add(new StudentViewModel
                     {
                         Id = idIncrement,

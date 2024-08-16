@@ -124,6 +124,10 @@ namespace SIMS_SE06205.Controllers
                 courseModel.Description = itemCourse.Description;
             }
 
+            if (courseModel.NameCourse == null)
+            {
+                return RedirectToAction(nameof(CourseController.Index), "Course");
+            }
             return View(courseModel);
         }
 
